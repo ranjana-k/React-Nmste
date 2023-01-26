@@ -8,7 +8,11 @@
     <title>React Learning</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">Not Rendered</div>
+    <!-- <div id="container">
+      <h1 id="title">Heading 1</h1>
+      <h2 id="title">Heading 2</h2>
+    </div> -->
 
     <script
       crossorigin
@@ -18,11 +22,16 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
-    <script src="App.js"></script>
+
     <script>
-      const heading = React.createElement("h1", {}, "Hello from React");
+      const heading1 = React.createElement("h1", { id: "title" }, "Heading 1");
+      const heading2 = React.createElement("h2", { id: "title" }, "Heading 2");
+      const container = React.createElement("div", { id: "container" }, [
+        heading1,
+        heading2,
+      ]);
       const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(heading);
+      root.render(container);
     </script>
   </body>
 </html>
