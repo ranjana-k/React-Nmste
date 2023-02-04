@@ -1,3 +1,11 @@
-#container {
+.header {
   background-color: yellow;
+}
+
+.jsx-header {
+  background-color: pink;
+}
+
+.functionComponent-header {
+  background-color: greenyellow;
 }
