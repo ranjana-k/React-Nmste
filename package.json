@@ -4,11 +4,13 @@
   "description": "Learning React",
   "main": "App.js",
   "scripts": {
+    "start":"parcel index.html",
+    "build":"parcel build index.html",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ranjana-k/React-Nmste.git"
+    "url": "git+https://github.csom/ranjana-k/React-Nmste.git"
   },
   "keywords": [],
   "author": "",
