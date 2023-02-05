@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
   background-color: yellow;
 }
@@ -7,5 +13,54 @@
 }
 
 .functionComponent-header {
-  background-color: greenyellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 0 2px 2px #f2f1f1;
+}
+.logo img {
+  width: 200px;
+}
+.search-container input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  border: 1px solid #ddd;
+}
+
+.search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #1aa484;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #6fbf7b;
+}
+.search-container .fa {
+  color: #fff;
+}
+
+.search-container button:hover {
+  background: #333;
+  border: 1px solid #333;
+}
+
+.user-container a {
+  color: #1aa484;
+  font-size: 30px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.user-container a:hover {
+  color: #333;
+}
+
+@media screen and (max-width: 600px) {
+  .functionComponent-header {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -37,16 +37,29 @@ const headerJSX = (
 const HeaderComponent = () => {
   return (
     <div className="functionComponent-header">
-      {header5}
-      <h1 className="functionComponent-title">
-        Heading h1 using functionComponent
-      </h1>
-      <h2 className="functionComponent-title">
-        Heading h2 using functionComponent
-      </h2>
-      <h3 className="functionComponent-title">
-        Heading h3 using functionComponent
-      </h3>
+      <div className="logo">
+        <a href="/">
+          <img
+            alt="logo"
+            src="https://www.analyticsinsight.net/wp-content/plugins/gs-logo-slider/assets/img/dummy-data/gs-logo-slider-2.png"
+          />
+        </a>
+      </div>
+
+      <div className="search-container">
+        <form action="">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+
+      <div className="user-container">
+        <a>
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
   );
 };
